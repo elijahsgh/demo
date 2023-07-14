@@ -130,3 +130,16 @@ Example `when` clause:
 This constraint is visible in the Harness UI.
 
 ![Constraint](omni_run.png)
+
+## Wrapping up
+
+After the run we can see the helm releases that Harness has managed.
+
+```
+$ helm list -A
+NAME                                            	NAMESPACE          	REVISION	UPDATED                                	STATUS  	CHART                     	APP VERSION
+harness-delegate                                	harness-delegate-ng	1       	2023-07-14 04:50:46.942881093 -0500 CDT	deployed	harness-delegate-ng-1.0.11	1.16.0     
+release-43182ef1f0a2233ca3fce3c24821f86b0c1621c2	dev                	1       	2023-07-14 10:39:49.789308013 +0000 UTC	deployed	nginx-15.1.1              	1.25.1     
+release-a1e9d5da9336ffa24fb709662245f7e7ed5f71c0	stage              	1       	2023-07-14 10:39:56.439598871 +0000 UTC	deployed	nginx-15.1.1              	1.25.1     
+release-a531c43d1636d567168efb72b0afb389d19c0b00	prod               	1       	2023-07-14 10:40:18.636709692 +0000 UTC	deployed	nginx-15.1.1              	1.25.1  
+```
