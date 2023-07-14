@@ -78,6 +78,16 @@ Similar to the kubernetes provider, we will add the Helm provider to our terrafo
 
 **Harness credentials are stored in a local .tfvars file that is in .gitignore to avoid exposing secrets**
 
+An example of `harness.auto.tfvars` would be:
+```
+$ cat harness.auto.tfvars 
+harness_delegate_account_id = <secret omitted>
+harness_delegate_token = <secret omitted>
+harness_delegate_manager_endpoint = "https://app.harness.io/gratis"
+harness_terraform_account_id = <secret omitted>
+harness_terraform_api_key = <secret omitted>
+```
+
 After `terraform apply` we can sanity check the helm chart installation.
 
 ```

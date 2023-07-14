@@ -18,7 +18,6 @@ variable "harness_delegate_token" {
 
 variable "harness_delegate_manager_endpoint" {
   sensitive = false
-
 }
 
 variable "harness_delegate_docker_image" {
@@ -30,7 +29,6 @@ variable "harness_delegate_docker_image" {
 variable "harness_delegate_replicas" {
   default   = "1"
   sensitive = false
-
 }
 
 variable "harness_delegate_upgrader_enabled" {
